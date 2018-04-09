@@ -1,5 +1,6 @@
 hosts: localhost 
-  convertirse en: 
-  tareas verdaderas : 
-  - nombre: instalar htop 
-    apt: name = htop
+  become: true
+  tasks:
+  - name: Install htop
+    apt: name=htop
+
